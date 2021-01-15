@@ -12,7 +12,6 @@ const reducer = (state = initialState, action) => {
         case Actions.SET_NEWS:
             let fillNews = [];
             const loadedNews = action.news.map(item => item._id)
-            console.log('q', loadedNews.lead_paragraph)
             for (let i = 0; i < loadedNews.length; i++) {
                 fillNews.push(new News(
                     action.news.map(item => item._id)[i] + Math.random(),
