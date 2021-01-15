@@ -26,12 +26,12 @@ const MainScreen = props => {
     dispatch(productActions.fetchProducts(text))
   }
 
-  const loadProducts = async () => {
+  const loadProducts =  () => {
     dispatch(productActions.newData(true))
     setError(null)
     setIsRefreshing(true)
     setIsLoading(true)
-    await dispatch(productActions.fetchProducts(text));
+     dispatch(productActions.fetchProducts(text));
     setIsRefreshing(false)
     setIsLoading(false)
 
