@@ -27,7 +27,6 @@ const MainScreen = props => {
   }
 
   const loadProducts = async () => {
-    console.log('we entered load products')
     dispatch(productActions.newData(true))
     setError(null)
     setIsRefreshing(true)
