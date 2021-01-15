@@ -25,7 +25,7 @@ export const newData = (search) => {
 }
 
 export const addNews= ()=>{
-    return{type:Actions.SET_NEWS}
+    return{type:Actions.ADD_NEWS}
 }
 
 
